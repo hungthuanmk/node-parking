@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Mobile lab Parking",
   "main": "index.js",
-  "scripts": {
-    "test": "This is a test"
-  },
   "author": "Mobile lab",
   "license": "ISC",
   "dependencies": {
