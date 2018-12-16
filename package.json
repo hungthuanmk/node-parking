@@ -7,9 +7,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "html": "^1.0.0",
+    "jsonwebtoken": "^8.4.0",
     "mysql": "^2.16.0",
     "node-excel-export": "^1.4.4"
   }
