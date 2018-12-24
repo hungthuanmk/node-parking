@@ -83,7 +83,7 @@ app.get('/api/recognizePlate', (req, res) => {
 
 app.listen(expressPort, (err) => {
     if (err) throw err;
-    console.log("Listening on port " + expressPort);
+    console.log("Listening on port " + process.env.PORT || expressPort);
 });
 
 // Database.connect2Db('hcmiuiot.zapto.org', 3306, 'parking', 'parking');
