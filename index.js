@@ -33,6 +33,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
+    res.clearCookie('key');
     res.render('pages/login.ejs');
 });
 
