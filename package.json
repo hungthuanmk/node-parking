@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Mobile lab Parking",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "Mobile lab",
   "license": "ISC",
   "dependencies": {
