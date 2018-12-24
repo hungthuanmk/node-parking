@@ -81,7 +81,7 @@ app.get('/api/recognizePlate', (req, res) => {
     })
 });
 
-app.listen(expressPort, (err) => {
+app.listen(process.env.PORT || expressPort, (err) => {
     if (err) throw err;
     console.log("Listening on port " + process.env.PORT || expressPort);
 });
