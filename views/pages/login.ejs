@@ -9,10 +9,13 @@
     <h1>MOBILE LAB LOGIN PAGE</h1>
     <form action="/login" method="post">
         Username:<br>
-        <input type="text" id="txtUsername" name="username"/><br>
+        <input type="text" id="txtUsername" name="username" value="parking"/><br>
         Password:<br>
-        <input type="password" id="txtPassword" name="password"/> <br>
+        <input type="password" id="txtPassword" name="password" value="parking"/> <br>
         <input type="submit" id="btnSubmit" value="Log in"/>
+        <% if (locals.failed) { %>
+            <h2><%= failed %></h2>
+        <% } %>
     </form>
 </body>
 

@@ -1,0 +1,23 @@
+<footer>
+    <style>
+        .footer {
+            height: 25px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2D67D5;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <div class="footer">
+        <p id="txtTime" align="right"></p>
+    </div>
+
+    <script>
+        setInterval(() => {
+            document.getElementById('txtTime').innerText = Date().toLocaleString('vi-VN');
+        }, 1000);
+    </script>
+</footer>
