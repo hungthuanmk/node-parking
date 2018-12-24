@@ -39,12 +39,26 @@
            <td><video id="cam14" width="350px" autoplay/></td>
            <td></td>
            <td><img id="cam23" src="http://wfiles.brothersoft.com/c/cat-photograph_195928-800x600.jpg" width="350px"/></td>
-           <td><img id="cam24" src="http://wfiles.brothersoft.com/c/cat-photograph_195928-800x600.jpg" width="350px"/></td>
+           <td><canvas id="cam24" width="350px" height="300px"/></td>
+           <script>
+               var can = document.getElementById('cam24');
+
+               setInterval(() => {
+                   var img = new Image();
+                   img.src = 'http://211.132.51.104/-wvhttp-01-/GetOneShot?image_size=640x480&frame_count=1000000000';
+                   img.crossOrigin = 'Anonymous';
+                   img.onload = () =>  {
+                        console.log('http://211.132.51.104/-wvhttp-01-/GetOneShot?image_size=640x480');
+                        can.getContext('2d').drawImage(img,0,0);
+                   }
+               }, 300);
+
+           </script>
            <!--<td><video id="cam24" width="350px" autoplay/></td>-->
        </tr>
    </table>
 <div>
-    <canvas id="tempCanvas"></canvas>
+    <!--<canvas id="tempCanvas"></canvas>-->
 
     <!--<h3 style="color: rebeccapurple; margin-left: 10px">Giờ đăng nhập: <%= loggedIn%></h3>-->
     <script src="js/Camera.js"></script>
@@ -54,7 +68,6 @@
         <button onclick="location.href='/logout';">Log out</button>
         <button onclick="captureCam()">Capture CAM</button>
         <button onclick="onRfidDetected(randomString(10))">Test onRfidDetected</button>
-
     </div>
     <script>
         navigator.mediaDevices.getUserMedia({video: true}).then((stream) => {
