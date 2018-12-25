@@ -1,5 +1,6 @@
 const Database = require('./Database.js');
 const Employee = require('./Employee.js');
+const ImgProcessing = require('./ImgProcessing.js');
 const Report = require('./Report.js');
 const express = require('express');
 const cookieParser = require('cookie-parser');
@@ -8,6 +9,7 @@ const bodyParser = require('body-parser');
 const jsonwebtoken = require('jsonwebtoken');
 
 const expressPort = 3000;
+var actualPort = process.env.PORT || expressPort;
 
 app.set('view engine', 'ejs');
 app.use(cookieParser());
@@ -69,22 +71,44 @@ app.get('/api/test', (req, res) => {
    })
 });
 
+function randomInt(low, high) {
+    return Math.floor(Math.random() * (high - low) + low)
+}
 app.get('/api/tracking/new', (req, res) => {
    Employee.loginRequired(req, res, () => {
-
+       res.json({status: 'success', trackingId: randomInt(1, 20)})
    })
 });
 
-app.get('/api/recognizePlate', (req, res) => {
-    console.log("Some one want to recognize plate");
+app.post('/api/imgProcessing/recognizePlate', (req, res) => {
+    // console.log("Some one want to recognize plate");
+    console.log(req.body);
     Employee.loginRequired(req, res, () => {
-        res.json({plate: '59G229876'});
+        res.json(ImgProcessing.recognizePlate());
     })
 });
 
-app.listen(process.env.PORT || expressPort, (err) => {
+app.post('/api/tracking/put/img/front', (req, res) => {
+    Employee.loginRequired(req, res, () => {
+        res.json({status: 'PUT FRONT IMG COMPLETED'});
+    });
+});
+
+app.post('/api/tracking/put/img/plate', (req, res) => {
+    Employee.loginRequired(req, res, () => {
+        res.json({status: 'PUT PLATE IMG COMPLETED'});
+    });
+});
+
+app.post('/api/tracking/put/plateNumber', (req, res) => {
+    Employee.loginRequired(req, res, () => {
+        res.json({status: 'PUT PLATENUMBER COMPLETED'});
+    });
+});
+
+app.listen(actualPort, (err) => {
     if (err) throw err;
-    console.log("Listening on port " + process.env.PORT || expressPort);
+    console.log("Listening on port " + actualPort);
 });
 
 // Database.connect2Db('hcmiuiot.zapto.org', 3306, 'parking', 'parking');

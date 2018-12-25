@@ -23,7 +23,11 @@ class Employee {
         if (req.user) {
             next1();
         } else {
-            next2();
+            if (next2)
+                next2();
+            else {
+                return res.status(401).json({message: 'Unauthorized user!'});
+            }
             //return res.status(401).json({message: 'Unauthorized user!'});
         }
     }
