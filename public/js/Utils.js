@@ -1,22 +1,23 @@
-function httpRequest(method='GET', json=false, address, context, callback) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+function httpRequest(method='POST', json=true, address, context, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
         if (this.readyState == 4) {
+            console.log('XHR: ' + this.status + ' - ' + xhr.responseText);
             if (this.status == 200) {
-                callback(this.status, xhttp.responseText);
+                callback(this.status, xhr.responseText);
             } else {
                 alert("Error: Lỗi nhận dữ liệu từ máy chủ\n" + "Status: " + this.status +
                     "\nDetail:" + method + " " + address);
             }
         }
     };
-    xhttp.open(method, address, true);
+    xhr.open(method, address, true);
     if (json == true)
-        xhttp.setRequestHeader("Content-type", "application/json");
+        xhr.setRequestHeader("Content-type", "application/json");
     if (context)
-        xhttp.send(JSON.stringify(context));
+        xhr.send(JSON.stringify(context));
    else
-       xhttp.send();
+       xhr.send();
 }
 
 function randomString(strLen) {

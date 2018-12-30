@@ -11,10 +11,15 @@ function onRfidDetected(rfidNumber) {
     // // xhttp.setRequestHeader("Content-type", "application/json");
     // xhttp.send();
 
-    httpRequest('POST', true, '/api/imgProcessing/recognizePlate', {mat:'someBase64'}, (status, returnText) => {
-        alert("Status: " + status + "\n" + returnText);
-    });
+    // httpRequest('POST', true, '/api/imgProcessing/recognizePlate', {mat:'someBase64'}, (status, returnText) => {
+    //     alert("Status: " + status + "\n" + returnText);
+    // });
     // alert()
 
-    captureCam();
+    flowIn();
+    newRecord(rfidNumber, (status, rep) => {
+        alert(rep);
+    });
+    // captureCam('FRONT CAM');
+    // captureCam('PLATE CAM');
 }

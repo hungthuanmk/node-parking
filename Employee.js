@@ -2,6 +2,7 @@ const db = require('./Database.js');
 const jwt = require('jsonwebtoken');
 
 class Employee {
+    // WARNING: DEPRECATED
     static authentication(username, password, callback, callback2) {
         if (username == 'parking' && password == 'parking') {
             callback({token: 'JWT ' + jwt.sign({name: 'Nguyen Phan Parking', loggedIn: Date()}, 'RESTFULAPIs')});
@@ -26,9 +27,9 @@ class Employee {
             if (next2)
                 next2();
             else {
-                return res.status(401).json({message: 'Unauthorized user!'});
+                res.status(401).json({message: 'Unauthorized user!'});
+                // res.redirect('/');
             }
-            //return res.status(401).json({message: 'Unauthorized user!'});
         }
     }
 }

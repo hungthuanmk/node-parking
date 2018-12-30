@@ -7,14 +7,14 @@
 
 <body>
     <h1>NODE PARKING LOGIN PAGE</h1>
-    <form action="/login" method="post">
+    <form action="/api/User/login" method="post">
         Username:<br>
         <input type="text" id="txtUsername" name="username" value="parking"/><br>
         Password:<br>
         <input type="password" id="txtPassword" name="password" value="parking"/> <br>
         <input type="submit" id="btnSubmit" value="Log in"/>
-        <% if (locals.failed) { %>
-            <h2><%= failed %></h2>
+        <% if (locals.error) { %>
+            <h2 style="color: red;">Wrong username or password!</h2>
         <% } %>
     </form>
 </body>

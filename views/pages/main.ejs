@@ -39,19 +39,24 @@
            <td><video id="cam14" width="350px" autoplay/></td>
            <td></td>
            <td><img id="cam23" src="http://wfiles.brothersoft.com/c/cat-photograph_195928-800x600.jpg" width="350px"/></td>
-           <td><canvas id="cam24" width="350px" height="300px"/></td>
+           <td><canvas id="cam24" width="350px" height="300px" crossOrigin="Anonymous"/></td>
+           <div>
+               <p>RFID:</p><p id="txtRfid"/>
+           </div>
            <script>
                var can = document.getElementById('cam24');
 
                setInterval(() => {
                    var img = new Image();
+                   // img.src = 'http://208.72.70.171/mjpg/video.mjpg'
+                   // img.crossOrigin = 'null';
                    img.src = 'http://211.132.51.104/-wvhttp-01-/GetOneShot?image_size=640x480&frame_count=1000000000';
-                   img.crossOrigin = 'Anonymous';
+                   // img.reload(true);
                    img.onload = () =>  {
-                        console.log('http://211.132.51.104/-wvhttp-01-/GetOneShot?image_size=640x480');
+                        // console.log('http://211.132.51.104/-wvhttp-01-/GetOneShot?image_size=640x480');
                         can.getContext('2d').drawImage(img,0,0);
                    }
-               }, 300);
+               }, 30);
 
            </script>
            <!--<td><video id="cam24" width="350px" autoplay/></td>-->
@@ -62,11 +67,13 @@
 
     <!--<h3 style="color: rebeccapurple; margin-left: 10px">Giờ đăng nhập: <%= loggedIn%></h3>-->
     <script src="js/Utils.js" type="text/javascript"></script>
+    <script src="js/Tracking.js" type="text/javascript"></script>
     <script src="js/Camera.js" type="text/javascript"></script>
+    <script src="js/Flows.js" type="text/javascript"></script>
     <script src="js/Rfid.js" type="text/javascript"></script>
 
     <div style="margin-left: 10px; width: 90%; margin-bottom: 5px">
-        <button onclick="location.href='/logout';">Log out</button>
+        <button onclick="location.href='/api/User/logout';">Log out</button>
         <button onclick="captureCam()">Capture CAM</button>
         <button onclick="onRfidDetected(randomString(10))">Test onRfidDetected</button>
     </div>
