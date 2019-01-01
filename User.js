@@ -25,7 +25,7 @@ module.exports = function (app) {
         DB.instance().raw("CALL authentication('"+username+"', '"+password+"');").then((data) => {
             //FIRST ROW data[0][0][0]
             if (data[0][0][0]) { /// exist
-                callback('JWT ' + jwt.sign({name: data[0][0][0].fullName, loggedIn: Date()}, 'RESTFULAPIs'));
+                callback('JWT ' + jwt.sign({username: data[0][0][0].username, name: data[0][0][0].fullName, loggedIn: Date()}, 'RESTFULAPIs'));
             } else
                 callback(undefined);
         });
@@ -35,7 +35,6 @@ module.exports = function (app) {
         // } else
         //     callback(undefined);
     }
-
 };
 
 module.exports.requireAuthentication = function (req, res, next) {

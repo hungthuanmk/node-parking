@@ -15,4 +15,14 @@ module.exports = function (app) {
             next();
         }
     });
+
+    app.use((req, res, next) => {
+        if (req.user)
+            var username = req.user.username;
+        else
+            var username = 'GUEST';
+        var remoteIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+        console.log('|-> '+ remoteIp + ' ' + username + ' ['+ new Date() + ']' + ' ' +req.method + ' ' + req.url);
+        next();
+    });
 };

@@ -25,6 +25,7 @@ require('./Middeware')(app);
 require('./Default')(app);
 require('./User')(app);
 require('./Tracking')(app);
+require('./Log')(app);
 
 app.listen(actualPort, (err) => {
     if (err) throw err;
@@ -34,4 +35,4 @@ app.listen(actualPort, (err) => {
 // Database.connect2Db('hcmiuiot.zapto.org', 3306, 'parking', 'parking');
 // Report.createDemo();
 
-DB.instance().raw("CALL authentication('hungthuanmk', 'hungthuanmk');").then((hello)=>console.dir(hello[0][0][0].fullName, {depth: null}));
+// DB.instance().raw("CALL authentication('hungthuanmk', 'hungthuanmk');").then((hello)=>console.dir(hello[0][0][0].fullName, {depth: null}));
