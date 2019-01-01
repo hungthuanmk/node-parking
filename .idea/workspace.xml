@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Tracking.js" line="74" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="295bdfb1-da76-4cb0-a31e-789e901b1957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middeware.js" beforeDir="false" afterPath="$PROJECT_DIR$/Middeware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service APIs.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Service APIs.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="295bdfb1-da76-4cb0-a31e-789e901b1957" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -147,8 +139,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Middeware.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="167">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -356,12 +348,12 @@
       <workItem from="1545922713927" duration="4423000" />
       <workItem from="1546007954988" duration="4330000" />
       <workItem from="1546175330444" duration="8784000" />
-      <workItem from="1546348862641" duration="6363000" />
+      <workItem from="1546348862641" duration="6596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92174000" />
+    <option name="totallyTimeSpent" value="92407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -535,8 +527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Middeware.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="167">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
         </state>
       </provider>
     </entry>
