@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Tracking.js" line="74" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/Tracking.js" line="89" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="295bdfb1-da76-4cb0-a31e-789e901b1957" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/views/pages/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/main.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tracking.js" beforeDir="false" afterPath="$PROJECT_DIR$/Tracking.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +51,7 @@
         <counts>
           <entry key="ejs" value="2097" />
           <entry key="html" value="869" />
-          <entry key="js" value="12366" />
+          <entry key="js" value="12482" />
           <entry key="json" value="39" />
         </counts>
       </usages-collector>
@@ -60,7 +60,7 @@
           <entry key="EJS" value="2097" />
           <entry key="HTML" value="869" />
           <entry key="JSON" value="39" />
-          <entry key="JavaScript" value="12366" />
+          <entry key="JavaScript" value="12482" />
         </counts>
       </usages-collector>
     </session>
@@ -70,20 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="-337">
               <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/pages/login.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -98,15 +89,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/pages/main.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Default.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -115,15 +97,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tracking.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+            <state relative-caret-position="308">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
               <folding>
                 <element signature="e#144#172#0" />
-                <element signature="e#969#2026#0" />
-                <element signature="e#2104#2383#0" />
+                <element signature="e#251#965#0" />
+                <element signature="e#904#2214#0" />
+                <element signature="e#1096#1752#0" />
+                <element signature="e#2039#2449#0" />
+                <element signature="e#2460#2476#0" />
               </folding>
             </state>
           </provider>
@@ -200,12 +185,12 @@
         <option value="$PROJECT_DIR$/Default.js" />
         <option value="$PROJECT_DIR$/Database.js" />
         <option value="$PROJECT_DIR$/Log.js" />
-        <option value="$PROJECT_DIR$/Tracking.js" />
         <option value="$PROJECT_DIR$/User.js" />
         <option value="$PROJECT_DIR$/Middeware.js" />
         <option value="$PROJECT_DIR$/views/pages/login.ejs" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/views/pages/main.ejs" />
+        <option value="$PROJECT_DIR$/Tracking.js" />
       </list>
     </option>
   </component>
@@ -364,12 +349,12 @@
       <workItem from="1545922713927" duration="4423000" />
       <workItem from="1546007954988" duration="4330000" />
       <workItem from="1546175330444" duration="8784000" />
-      <workItem from="1546348862641" duration="7657000" />
+      <workItem from="1546348862641" duration="8648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93468000" />
+    <option name="totallyTimeSpent" value="94459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -501,18 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tracking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-          <folding>
-            <element signature="e#144#172#0" />
-            <element signature="e#969#2026#0" />
-            <element signature="e#2104#2383#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Middeware.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -543,8 +516,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="-337">
           <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracking.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#144#172#0" />
+            <element signature="e#251#965#0" />
+            <element signature="e#904#2214#0" />
+            <element signature="e#1096#1752#0" />
+            <element signature="e#2039#2449#0" />
+            <element signature="e#2460#2476#0" />
+          </folding>
         </state>
       </provider>
     </entry>
